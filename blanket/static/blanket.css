@@ -1,0 +1,56 @@
+   html {
+        position: relative;
+        min-height: 100%;
+        background-color: white;
+        overflow: auto;
+    }
+    
+    #blanket {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .is-loading {
+        color: transparent !important;
+    }
+    
+    .comment {
+        margin-bottom: 1em;
+    }
+    
+    .capitilize {
+        text-transform: initial !important;
+    }
+    
+    .v-magic {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+    }
+    
+    .m-magic {
+        padding-top: 20px;
+    }
+    
+    .app-footer {
+        height: 50px;
+        text-align: center;
+        display: block;
+        position: absolute;
+        left: 0;
+        line-height: 50px;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .power-source:hover,
+    .power-source {
+        color: lightblue;
+        text-decoration: none;
+    }
+    
+    .power-source {
+        color: #1fc8db;
+        opacity: 0.9;
+    }

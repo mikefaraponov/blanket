@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34628c5e-7683-42ee-a1b8-66af31e30a00" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/containers/About.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/redux/actions/Counter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/components/Header.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/blanket_node_modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/redux/reducers/counter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/redux/reducers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shared/redux/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/index.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/copy-within.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/entries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/every.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/fill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/find-index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/find.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/for-each.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/from.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/includes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/index-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/join.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/last-index-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/pop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/push.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/reduce-right.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/reduce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/reverse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/shift.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/some.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/splice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/unshift.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/array/values.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/clear-immediate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/get-iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/is-iterable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/json/stringify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/acosh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/asinh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/atanh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/cbrt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/clz32.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/cosh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/expm1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/fround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/hypot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/imul.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/log10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/log1p.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/log2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/sign.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/sinh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/tanh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/math/trunc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/epsilon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/is-finite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/is-integer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/is-nan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/is-safe-integer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/max-safe-integer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/min-safe-integer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/parse-float.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/number/parse-int.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/assign.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/create.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/define-properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/define-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/entries.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/freeze.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/get-own-property-descriptor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/get-own-property-descriptors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/get-own-property-names.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/get-own-property-symbols.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/get-prototype-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/is-extensible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/is-frozen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/is-sealed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/prevent-extensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/seal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/set-prototype-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/object/values.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/promise.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/apply.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/construct.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/define-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/delete-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/enumerate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/get-own-property-descriptor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/get-prototype-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/has.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/is-extensible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/own-keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/prevent-extensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/set-prototype-of.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/reflect/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/regexp/escape.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/set-immediate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/code-point-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/ends-with.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/from-code-point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/includes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/pad-left.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/pad-right.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/raw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/repeat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/starts-with.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/trim-left.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/trim-right.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/string/trim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/for.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/has-instance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/is-concat-spreadable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/iterator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/key-for.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/match.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/replace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/species.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/split.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/to-primitive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/to-string-tag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/symbol/unscopables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/weak-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/core-js/weak-set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_async-to-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_class-call-check.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_create-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_define-enumerable-properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_define-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_extends.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_instanceof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_interop-require-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_interop-require-wildcard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_jsx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_new-arrow-check.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_object-destructuring-empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_object-without-properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_possible-constructor-return.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_self-global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_sliced-to-array-loose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_sliced-to-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_tagged-template-literal-loose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_tagged-template-literal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_temporal-ref.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_temporal-undefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_to-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_to-consumable-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/_typeof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/async-to-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/asyncToGenerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/class-call-check.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/classCallCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/create-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/createClass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/defaults.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/define-enumerable-properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/define-property.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/defineEnumerableProperties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/defineProperty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/extends.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/inherits.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/instanceof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/interop-require-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/interop-require-wildcard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/interopRequireDefault.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/interopRequireWildcard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/jsx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/new-arrow-check.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/newArrowCheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/object-destructuring-empty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/object-without-properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/objectDestructuringEmpty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/objectWithoutProperties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/possible-constructor-return.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/possibleConstructorReturn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/self-global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/selfGlobal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/sliced-to-array-loose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/sliced-to-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/slicedToArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/slicedToArrayLoose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/tagged-template-literal-loose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/tagged-template-literal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/taggedTemplateLiteral.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/taggedTemplateLiteralLoose.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/temporal-ref.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/temporal-undefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/temporalRef.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/temporalUndefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/to-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/to-consumable-array.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/toArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/toConsumableArray.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/helpers/typeof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/regenerator/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/node_modules/babel-runtime/regenerator/runtime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/array/turn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/date/add-locale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/date/format-utc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/date/format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/function/only.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/function/part.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/math/pot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/number/random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/object/classof.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/object/define.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/object/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/object/is-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/object/make.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/string/escape-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/core-js/string/unescape-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/bind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/create-decorated-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/create-decorated-object.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/default-props.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/define-decorated-property-descriptor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/has-own.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-export-wildcard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/temporal-assert-defined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/typeof-react-element.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/big5-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp936.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp949.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/cp950.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/eucjp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/bom-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/extend-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/README.md" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/async-to-generator.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/async-to-generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/class-call-check.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/class-call-check.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/create-class.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/create-class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/createClass.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/createClass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/defaults.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/defaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/define-property.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/define-property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/extends.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/extends.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/get.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/get.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/inherits.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/inherits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/instanceof.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/instanceof.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-require-default.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-require-default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-require-wildcard.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/interop-require-wildcard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/jsx.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/jsx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/new-arrow-check.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/new-arrow-check.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/object-destructuring-empty.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/object-destructuring-empty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/object-without-properties.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/object-without-properties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-core/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-core/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-plugin-transform-decorators-legacy/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babylon/package.json" afterPath="$PROJECT_DIR$/node_modules/babylon/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/regenerator/runtime.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/regenerator/runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/self-global.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/self-global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/set.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/sliced-to-array-loose.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/sliced-to-array-loose.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/sliced-to-array.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/sliced-to-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/slicedToArray.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/slicedToArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/tagged-template-literal-loose.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/tagged-template-literal-loose.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/tagged-template-literal.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/tagged-template-literal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/temporal-undefined.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/temporal-undefined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/to-array.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/to-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/to-consumable-array.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/to-consumable-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/typeof.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/typeof.js" />
+    </list>
+    <ignored path="blanket.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="blanket" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/server.jsx" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client/index.jsx" />
+        <option value="$PROJECT_DIR$/server/index.jsx" />
+        <option value="$PROJECT_DIR$/shared/redux/store/index.js" />
+        <option value="$PROJECT_DIR$/shared/routes.jsx" />
+        <option value="$PROJECT_DIR$/shared/containers/About.jsx" />
+        <option value="$PROJECT_DIR$/shared/components/Header.jsx" />
+        <option value="$PROJECT_DIR$/shared/containers/Join.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blanket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/shared/redux" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ToolWindowManager">
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23494424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/redux/actions/Counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/redux/reducers/counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/redux/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1456207349624" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/components/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+          <folding>
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+            <marker date="1456215440656" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/routes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51031893">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/containers/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09137056">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/containers/Login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/containers/Join.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12182741">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/components/Auth.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

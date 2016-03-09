@@ -7,7 +7,7 @@ function user(state = {
     isFetching: false,
     isAuthenticated: localStorage.user ? true : false,
     errorMessage: '',
-    user: localStorage.user && JSON.parse(localStorage.user) || null
+    user: (localStorage.user && JSON.parse(localStorage.user)) || null
   }, action) {
 
   switch (action.type) {

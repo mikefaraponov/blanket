@@ -4,6 +4,8 @@ import { routeActions } from 'react-router-redux'
 import Control from '../components/Control'
 import { joinUser } from '../redux/actions/Join'
 import { attachFile } from '../redux/actions/attachFile'
+import Icon from '../components/Icon'
+
 
 @connect(state => ({ 
     isFetching: state.user.isFetching, 
@@ -11,10 +13,7 @@ import { attachFile } from '../redux/actions/attachFile'
     file: state.file 
 }))
 class Join extends React.Component {
-
     handleFile(ev) {
-        ev.preventDefault();
-
         const { dispatch } = this.props,
                 reader = new FileReader(),
                 file = ev.target.files[0];
@@ -29,8 +28,7 @@ class Join extends React.Component {
         if(file instanceof Blob) reader.readAsDataURL(file);
     }
 
-    onJoin(ev){
-        ev.preventDefault();
+    onJoin(){
         const { dispatch, file } = this.props;
         const { name, email, password, confirm, sex, biography, submit } = this.refs;
         const user_params = {
@@ -47,7 +45,7 @@ class Join extends React.Component {
     }
 
     render() {
-        const { file, user } = this.props
+        const { file, user, dispatch } = this.props
 
         const fileName = file.fileName ? file.fileName : 'Attach your Avatar';
 
@@ -55,12 +53,13 @@ class Join extends React.Component {
             <div>
 
                 <h4 className="title" >🎯 Join us</h4>
-
                 {
                     (this.props.message)?
 
                     <div className="notification is-danger">
-                      <button className="delete" onClick={()=>this.props.dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}></button>
+                      <button className="delete" onClick={
+                        ()=>dispatch({type: 'CLEAR_FAILURE_MESSAGE'})
+                      }></button>
                       {this.props.message}
                     </div> : ''
                 }
@@ -112,10 +111,11 @@ class Join extends React.Component {
                     <button onClick={::this.onJoin} 
                             ref="submit" 
                             className={`button is-primary ${(this.props.isFetching)?"is-loading":""}`}>
-                            📝 Submit 
+                             <Icon fa="check"/>&nbsp;Submit 
                     </button>
                     &nbsp;
-                    <Link to="/login" className="button" onClick={()=>this.props.dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}>🔐 Cancel</Link>
+                    <Link to="/login" className="button" onClick={()=>this.props.dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}>
+                    <Icon fa="unlock-alt"/>&nbsp;Cancel</Link>
                 </Control>
 
             </div>

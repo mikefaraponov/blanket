@@ -1,11 +1,16 @@
 import { ColumnsMobile, Column } from './ColumnsMobile'
 
-const PersonalInfo = function({name, biography}){
+const PersonalInfo = function({name, biography, email, children}){
   return (
     <ColumnsMobile >
-       <Column className='is-8 is-offset-2-desktop'>
-         <h4 className="title is-5">{name}</h4>
-         <h5 className="subtitle is-6">{biography}</h5>
+       <Column className='is-8-desktop is-offset-2-desktop'>
+        <div className='box' id='personal-info'>
+        <p className="title is-5">{name} <small>{email || 'example@email.com'}</small></p>
+                <p className="subtitle is-6">
+{biography}                </p>
+         
+        </div>
+         {children}
        </Column>
      </ColumnsMobile>
   )

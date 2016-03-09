@@ -1,4 +1,5 @@
 import {Link, IndexLink } from 'react-router'
+import Icon from './Icon'
 
 class Header extends React.Component {
 
@@ -18,6 +19,7 @@ class Header extends React.Component {
     }
 
     render(){
+        
         let id = localStorage.user && JSON.parse(localStorage.user).id;
 
         let active = this.state.active?'is-active':'';
@@ -25,10 +27,10 @@ class Header extends React.Component {
             <div className="container">
                 <div className="header-left">
                     <Link className="header-item logo" to={"/id" + id} >
-                        <strong style={{"fontSize": '1.5em'}}><i className="fa fa-map-o"></i> blanket</strong>
+                        <strong style={{"fontSize": '1.5em'}}><Icon fa="map-o"/> blanket</strong>
                     </Link>
                     <Link className="header-tab" to="/search" activeClassName="is-active">
-                        Search
+                        <Icon fa="user-plus"/> Search
                     </Link>
                 </div>
 
@@ -40,16 +42,19 @@ class Header extends React.Component {
 
                 <div className={"header-right header-menu " + active} >
                   <span className="header-item">
-                    <Link to='/edit' onClick={::this.hideMenu}><i className="fa fa-pencil-square-o"></i>&nbsp;Edit Profile</Link>
+                    <Link activeClassName="be-active" to='/add' onClick={::this.hideMenu}><Icon fa="camera-retro"/>&nbsp;Make a Blank</Link>
                   </span>
                   <span className="header-item">
-                    <a href="#"><i className="fa fa-info-circle"></i>&nbsp; About</a>
+                    <Link activeClassName="be-active" to='/edit' onClick={::this.hideMenu}><Icon fa="pencil-square-o"/>&nbsp;Edit Profile</Link>
+                  </span>
+                  <span className="header-item">
+                    <a><Icon fa="info-circle"/>&nbsp; About</a>
                   </span>
                   <span className="header-item ">
-                    <a href="#" className="is-disabled"><i className="fa fa-inbox"></i>&nbsp; Inbox</a>
+                    <a className="is-disabled"><Icon fa="inbox"/>&nbsp; Inbox</a>
                   </span>
                   <span className="header-item">
-                    <a className="button" onClick={this.props.onLogout}>Log out</a>
+                    <a className="button is-danger" onClick={this.props.onLogout}><Icon fa="sign-out"/>&nbsp;Log out</a>
                   </span>
                 </div>
             </div>

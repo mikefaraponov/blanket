@@ -3,8 +3,5 @@ class Comment < ActiveRecord::Base
   belongs_to :blank
   belongs_to :user
 
-  validates :blank_id, presence: true
-  validates :user_id, presence: true
-  validates :body, presence: true
-
+  validates :blank_id, :user_id, :body, presence: true
 end

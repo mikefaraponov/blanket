@@ -9,7 +9,7 @@ import SearchResult from '../components/SearchResult'
 @connect(state => ({ isFetching: state.search.isFetching, results: state.search.results }))
 class Search extends React.Component {
   render(){
-    var {results, isFetching, dispatch} = this.props
+    const {results, isFetching, dispatch} = this.props
     return (
       <Page>
         <ColumnsMobile>
@@ -18,8 +18,8 @@ class Search extends React.Component {
               <input className="input" ref="search" type="search" 
                 placeholder="Start typing name..." 
                 onChange={ ev => {
-                    var v = ev.target.value.trim();
-                    if(v)
+                    const v = ev.target.value.trim();
+                    if(v.length)
                       dispatch(searchUsers(v))
                     else
                       dispatch({type: 'CLEAR_SEARCH_RESULTS'})

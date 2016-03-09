@@ -25,20 +25,27 @@ class User < ActiveRecord::Base
     styles: { original: "64x64" },
     default_url: "/missing.png"
 
+  validates :name, :email, presence: true
+  validates :email, uniqueness: true
+  validates_format_of :email,:with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
+  validates :name, length: { :in => 2..30  }
+  validates :biography, length: { maximum: 500 }
+  validates :password, length: { maximum: 20 }
   validates_attachment :avatar,
     content_type: { content_type: %w(image/jpeg image/jpg image/gif image/png) }
 
-  # Follows a user.
+  def mail_to(user)
+    UserMailer.email(self, user).deliver_now unless self.id === user.id
+  end
+
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id) unless self.following? other_user and self.id === other_user.id
   end
 
-  # Unfollows a user.
   def unfollow(other_user)
     active_relationships.find_by(followed_id: other_user.id).destroy if self.following? other_user
   end
 
-  # Returns true if the current user is following the other user.
   def following?(other_user)
     following.include?(other_user)
   end

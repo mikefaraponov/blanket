@@ -18,7 +18,10 @@ class AuthController < ApplicationController
   def logout
     if @current_user
       @current_user.set_auth_token!
-      @current_user.save
+      if @current_user.save
+        render json: { statusText: 'SUCCESS' }
+      end
+      render_unauthorized
     else
       render_unauthorized
     end

@@ -1,7 +1,8 @@
 import {Link} from 'react-router'
 
 const Comment = function({avatarUrl, author, email, body, userId}){
-  return <article className="comment">
+  return 
+    <article className="comment">
             <div className="media">
               <div className="media-left">
                 <figure className="image is-32x32">
@@ -9,10 +10,8 @@ const Comment = function({avatarUrl, author, email, body, userId}){
                 </figure>
               </div>
               <div className="media-content">
-                <p className="title is-5">{author}</p>
-                <p className="subtitle is-6">
-                  <Link to={`/id${userId}`}>{email}</Link>
-                </p>
+                <p className="s"><strong>{author}</strong><small><Link to={`/id${userId}`}>{email}</Link></small></p> 
+                
               </div>
             </div>
             <div className="content">

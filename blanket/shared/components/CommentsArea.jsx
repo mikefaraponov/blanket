@@ -14,10 +14,8 @@ export const Comment = function({avatarUrl, author, email, body, userId}){
                 </figure>
               </div>
               <div className="media-content">
-                <p className="title is-5">{author}</p>
-                <p className="subtitle is-6">
-                  <Link to={`/id${userId}`}>{email}</Link>
-                </p>
+               <p className="s"><strong>{author}</strong><small><Link to={`/id${userId}`}>{email}</Link></small></p> 
+              
               </div>
             </div>
             <div className="content">
@@ -71,18 +69,6 @@ render(){
               <i className="fa fa-compress"></i> Close
             </button>
           </div>
-  // if(!this.state.toggleCommentForm){
-
-
-
-  // } else {
-
-  // }      :
-          
-  //       }
-
-
-
 
   return <div className="card-content">
     { 

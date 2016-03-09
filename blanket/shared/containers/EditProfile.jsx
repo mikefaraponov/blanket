@@ -11,6 +11,12 @@ import { editUser, deleteUser } from '../redux/actions/Edit'
     file: state.file 
 }))
 class EditProfile extends React.Component {
+    constructor(...args){
+        super(...args)
+        this.state = {
+            sex: JSON.parse(localStorage.user).sex
+        }
+    }
     destroy(){
         const ok = confirm('Are you sure?');
         const {dispatch} = this.props
@@ -22,13 +28,14 @@ class EditProfile extends React.Component {
     edit(){
         const {email, name, sex, biography, password} = this.refs
         const {dispatch, file} = this.props
+        const user = JSON.parse(localStorage.user)
         dispatch(editUser({
-            name: name.value.trim(),
-            email: email.value.trim(),
+            name: name.value.trim() || user.name,
+            email: email.value.trim() || user.email,
             password: password.value,
             sex: sex.checked,
             avatar: file.fileBase64,
-            biography: biography.value.trim()
+            biography: biography.value.trim() || user.biography
         }));
     }
     handleFile(ev) {
@@ -63,10 +70,15 @@ render() {
                     </Control>
                     <Control>
                         <label className="radio">
-                            <input  type="radio" ref="sex" name="question" value="Male" defaultChecked={user.sex}/> Male
+                            <input  type="radio" ref="sex" name="question" value={false} checked={this.state.sex} onChange={()=>{
+                                this.setState({sex: true})
+                            }}/> Male
                         </label>
                         <label className="radio">
-                            <input type="radio" name="question" value="Female"/> Famale
+                            <input type="radio" name="question" value={true} checked={!this.state.sex}  onChange={()=>{
+                                console.log(this.state.sex)
+                                this.setState({sex: false})
+                            }}/> Famale
                         </label>
                     </Control>
                     <Control>

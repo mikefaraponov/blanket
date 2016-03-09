@@ -1,8 +1,20 @@
 import {FETCH_USER_PAGE_REQUEST, FETCH_USER_PAGE_SUCCESS, FETCH_USER_PAGE_FAILURE} from '../actions/UserPage'
 var deepAssign = require('deep-assign');
 
-function search(state = {
-    profile: {},
+function profile(state = {
+    profile: {
+      avatar_url: '',
+          blanks_count:  0,
+          following_count:  0,
+          followers_count:  0,
+          is_following: false,
+          id:  0,
+          email:  '',
+          name:  '',
+          biography:  '',
+          sex: null,
+          blanks: []
+    },
     isFetching: false,
     errorMessage: ''
   }, action) {
@@ -48,6 +60,7 @@ function search(state = {
             ...state.profile.blanks
           ]
         },
+        isBlankFetching: false,
         isFetching: false,
         errorMessage: ''
       })
@@ -115,12 +128,13 @@ function search(state = {
     })
     case 'FETCH_ADD_BLANK_REQUEST':
       return Object.assign({}, state, {
+        isBlankFetching: true,
         errorMessage: ''
       })
 
     case 'FETCH_ADD_BLANK_FAILURE':
       return Object.assign({}, state, {
-        isFetching: true,
+        isBlankFetching: false,
         errorMessage: action.message
       })
     default:
@@ -128,4 +142,4 @@ function search(state = {
   }
 }
 
-export default search;
+export default profile;

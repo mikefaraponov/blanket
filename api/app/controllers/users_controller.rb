@@ -7,11 +7,15 @@ class UsersController < ApplicationController
   end
 
   def following
-    render json: @user.following
+    render json: @user.following.map { |u|
+      u.serializable_hash(only: [:id, :email, :name, :biography], methods: [:avatar_url])
+    }
   end
 
   def followers
-    render json: @user.followers
+    render json: @user.followers.map { |u|
+      u.serializable_hash(only: [:id, :email, :name, :biography], methods: [:avatar_url])
+    }
   end
 
   def show
@@ -56,9 +60,12 @@ class UsersController < ApplicationController
 
 
   def create
+
     @user = User.new(user_params)
+
     @user.from_base64_to_avatar!(user_params[:avatar]) if user_params[:avatar]
     if @user.save
+      # UserMailer.welcome_email(@user).deliver_now
       render json: @user.serializable_hash(
         except: [:avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at, :password_digest],
         methods: :avatar_url
@@ -66,6 +73,7 @@ class UsersController < ApplicationController
     else
       render_bad_request "Bad Request!"
     end
+
   end
 
 
@@ -90,9 +98,8 @@ class UsersController < ApplicationController
 
   def destroy
     @current_user.destroy
-    render json: {message: 'Successful!'}
+    render json: { message: 'Successful!' }
   end
-
 
   private
 

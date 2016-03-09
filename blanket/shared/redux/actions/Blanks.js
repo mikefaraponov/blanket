@@ -38,6 +38,7 @@ export function addComment(post_id, index, body) {
 function requestBlank() {
   return {
     type: 'FETCH_ADD_BLANK_REQUEST',
+    isBlankFetching: true,
     isFetching: true
   }
 }
@@ -46,6 +47,7 @@ function receiveBlank(blank) {
   return {
     type: 'FETCH_ADD_BLANK_SUCCESS',
     isFetching: false,
+    isBlankFetching: false,
     blank
   }
 }
@@ -54,6 +56,7 @@ function blankError(message) {
   return {
     type: 'FETCH_ADD_BLANK_FAILURE',
     isFetching: false,
+    isBlankFetching: false,
     message
   }
 }

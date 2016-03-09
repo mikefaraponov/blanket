@@ -1,6 +1,6 @@
 import Control from './Control'
 import {ColumnsMobile, Column} from './ColumnsMobile'
-
+import Icon from './Icon' 
 
 const PostButton = React.createClass({
   getInitialState() {
@@ -9,8 +9,6 @@ const PostButton = React.createClass({
       };
   },
   handleFile(ev) {
-        ev.preventDefault();
-
         const { onMakePost } = this.props,
                 reader = new FileReader(),
                 file = ev.target.files[0];
@@ -18,9 +16,10 @@ const PostButton = React.createClass({
         reader.onload = stream => {
           onMakePost(stream.target.result, file.name);
           this.setState({togglePostForm: false})
+          this.refs.comment.focus()
         }
-
         if(file instanceof Blob) reader.readAsDataURL(file);
+
   },
   toggleForm(){
     this.props.onTransactionEnd();
@@ -28,48 +27,49 @@ const PostButton = React.createClass({
   },
   render(){
     const {togglePostForm} = this.state;
-    const {onSendBlank, attachName} = this.props
+    const {onSendBlank, attachName, isBlankFetching} = this.props
+    console.info('Is blank fetching', isBlankFetching)
     return (
-      <ColumnsMobile>
-        <Column className='is-8-desktop is-offset-2-desktop'>
-        {
-          (togglePostForm)?
-          <label className="button is-outlined is-primary is-fullwidth">
-            <i className="fa fa-picture-o"></i>&nbsp; Make a blank
+      
+        
+          (togglePostForm && !isBlankFetching)?
+          <label id='add' >
+            <Icon fa='plus'/>
             <input 
               onChange={this.handleFile} 
               type="file" 
               ref="file2" 
               style={ {"display":"none"} }
             />
-          </label>:
-          [
+          </label>:<ColumnsMobile>
+        <Column className='is-8-desktop is-offset-2-desktop'>
+          
             <Control key="0">
               <textarea ref="comment" className="textarea" placeholder="Type your idea and attach an image..."></textarea>
-            </Control>,
+            </Control>
             <Control key="1">
               <button 
-                className="button is-success is-outlined" 
+                className={"button is-success " + (isBlankFetching?'is-loading':'')} 
                 onClick={()=>{onSendBlank(this.refs.comment.value); this.toggleForm()}}>
-                  <i className="fa fa-paper-plane"></i>&nbsp;
+                  <Icon fa="paper-plane"/>&nbsp;
               </button>&nbsp;
               <label className="button is-primary is-outlined" >
-                <i className="fa fa-paperclip"></i> {attachName + '...'}
+                <Icon fa="paperclip"/> {(attachName || '') + '..'}
                 <input onChange={this.handleFile} 
                   type="file" 
                   ref="file1" 
                   style={ {"display":"none"} }
                 />
               </label>&nbsp;
-              <button className="button is-info is-outlined is-pulled-right" onClick={this.toggleForm}>
-                <i className="fa fa-compress"></i> Close
+              <button className="button is-info is-outlined" onClick={this.toggleForm}>
+                <Icon fa="compress"/> Close
               </button>
             </Control>
-          ]
-
-        }
-        </Column>
+          </Column>
       </ColumnsMobile>
+
+        
+        
     );   
   }
 });

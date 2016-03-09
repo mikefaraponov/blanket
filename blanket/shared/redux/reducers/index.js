@@ -1,6 +1,6 @@
 import user from './user'
 import file from './file'
-import edit from './edit'
+import follow from './follow'
 import profile from './profile'
 import search from './search'
 
@@ -8,6 +8,6 @@ export default {
   user,
   file,
   profile,
-  edit,
+  follow,
   search
 };

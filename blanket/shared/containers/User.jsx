@@ -1,5 +1,5 @@
-import {connect} from 'react-redux'
-import {Link} from 'react-router'
+import { connect } from 'react-redux'
+import { Link } from 'react-router'
 import Page from '../components/Page'
 import UserStatArea from '../components/UserStatArea'
 import PersonalInfo from '../components/PersonalInfo'
@@ -13,40 +13,40 @@ import { postLike } from '../redux/actions/Like'
 import { destroyLike } from '../redux/actions/Like'
 import { postSubscribe } from '../redux/actions/Subscribe'
 import { destroySubscribe } from '../redux/actions/Subscribe'
-import {ColumnsMobile, Column} from '../components/ColumnsMobile'
-import {getUserPageById} from '../redux/actions/UserPage'
+import { ColumnsMobile, Column} from '../components/ColumnsMobile'
+import { getUserPageById } from '../redux/actions/UserPage'
 
 @connect(
   (state, own) => ({
     id: own.params.id, 
-    profile_id: state.user.user && state.user.user.id,
+    profile_id: state.user.user.id,
     profile: state.profile.profile,
-    blanks: state.profile.profile.blanks || [],
+    blanks: state.profile.profile.blanks,
     hasFile: state.file.fileName,
     file: state.file.fileBase64,
     is_following: state.profile.profile.is_following,
-    isFetching: state.profile.isFetching
+    isFetching: state.profile.isFetching,
+    isBlankFetching: state.profile.isBlankFetching
   })
 )
 
 class User extends React.Component {
   
   componentDidMount(){
-    const {dispatch, id} = this.props;
+    const {dispatch, id} = this.props
     dispatch(getUserPageById(id))
   }
 
   componentWillReceiveProps(nextProps) {
-    const {dispatch, id} = this.props;
+    const {dispatch, id} = this.props
     
-    if(id !== nextProps.params.id) {
-      console.log('What!')
+    if(id !== nextProps.params.id) 
       dispatch(getUserPageById(nextProps.params.id))
-    }
+    
 
   }
 
-  handleSubscribe(ev){
+  handleSubscribe(){
     const {is_following, id, dispatch} = this.props
     if( !is_following ) dispatch(postSubscribe(id));
     else dispatch(destroySubscribe(id))
@@ -83,7 +83,7 @@ class User extends React.Component {
   }
 
   render(){
-    const { hasFile, profile, is_following, blanks, id } = this.props;
+    const { hasFile, profile, is_following, blanks, id, isBlankFetching } = this.props;
 
     return (
     (!this.props.isFetching)?<Page>
@@ -92,11 +92,13 @@ class User extends React.Component {
             blanks_count={profile.blanks_count} 
             followers_count={profile.followers_count} 
             following_count={profile.following_count}
+            userId={id}
           />
           <PersonalInfo name={profile.name} biography={profile.biography}/>
           { 
             ((this.props.profile_id && this.props.profile_id) == (this.props.id && this.props.id))?
             <PostButton 
+              isBlankFetching={isBlankFetching}
               onMakePost={::this.onMakePost} 
               onTransactionEnd={::this.onTransactionEnd} 
               onSendBlank={::this.onSendBlank} 

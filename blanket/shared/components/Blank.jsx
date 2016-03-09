@@ -13,6 +13,7 @@ const Comment = function({avatarUrl, author, email, body, userId}){
                 </figure>
               </div>
               <div className="media-content">
+              
                 <p className="title is-5">{author}</p>
                 <p className="subtitle is-6">
                   <Link to={`/id${userId}`}>{email}</Link>
@@ -67,6 +68,7 @@ const Blank = React.createClass({
     return <div className="column">
               <div className="card" style={{margin: '0 auto'}}>
                   <div className="card-image">
+
                     <figure className="image is-4by3">
                       <img src={API + imageSrc}/>
                     </figure>

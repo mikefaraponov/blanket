@@ -4,8 +4,7 @@ import {connect} from 'react-redux';
 import {loginUser} from '../redux/actions/Login'
 import Icon from '../components/Icon'
 
-@connect(state => ({ isFetching: state.user.isFetching, 
-    message: state.user.errorMessage }))
+@connect(mapStateToProps)
 class Login extends React.Component {
   handleLogin(ev){
     this.props.dispatch(loginUser({
@@ -14,16 +13,16 @@ class Login extends React.Component {
     }));
   }
   render(){
-    const {dispatch} = this.props;
+    const {dispatch, message} = this.props;
     return (
       <div>
         <h4 className="title">🔒 Login</h4>
         {
-          (this.props.message)?
+          (message)?
 
           <div className="notification is-danger">
             <button className="delete" onClick={()=>dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}></button>
-            {this.props.message}
+            {message}
           </div> : ''
         }
         <Control className="has-icon">
@@ -45,6 +44,13 @@ class Login extends React.Component {
     );
     
   }
+}
+
+function mapStateToProps(state){
+    return { 
+      isFetching: state.user.isFetching, 
+      message: state.user.errorMessage 
+    }
 }
 
 export default Login;

@@ -1,11 +1,5 @@
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-import Page from '../components/Page'
-import UserStatArea from '../components/UserStatArea'
-import PersonalInfo from '../components/PersonalInfo'
-import Blank from '../components/Blank'
-import Actions from '../components/Actions'
-import PostButton from '../components/PostButton'
 import { attachFile } from '../redux/actions/attachFile'
 import { postBlank } from '../redux/actions/Blanks'
 import { addComment } from '../redux/actions/Blanks'
@@ -15,21 +9,14 @@ import { postSubscribe } from '../redux/actions/Subscribe'
 import { destroySubscribe } from '../redux/actions/Subscribe'
 import { ColumnsMobile, Column} from '../components/ColumnsMobile'
 import { getUserPageById } from '../redux/actions/UserPage'
+import Page from '../components/Page'
+import UserStatArea from '../components/UserStatArea'
+import PersonalInfo from '../components/PersonalInfo'
+import Blank from '../components/Blank'
+import Actions from '../components/Actions'
+import PostButton from '../components/PostButton'
 
-@connect(
-  (state, own) => ({
-    id: own.params.id, 
-    profile_id: state.user.user.id,
-    profile: state.profile.profile,
-    blanks: state.profile.profile.blanks,
-    hasFile: state.file.fileName,
-    file: state.file.fileBase64,
-    is_following: state.profile.profile.is_following,
-    isFetching: state.profile.isFetching,
-    isBlankFetching: state.profile.isBlankFetching
-  })
-)
-
+@connect(mapStateToProps)
 class User extends React.Component {
   
   componentDidMount(){
@@ -66,9 +53,9 @@ class User extends React.Component {
   }
 
   onSendBlank(comment){
-      const {dispatch, file} = this.props;
-      if(comment.trim()) dispatch(postBlank(JSON.parse(localStorage.user).id, {image: file, body: comment}))
-      else dispatch(postBlank(JSON.parse(localStorage.user).id, {image: file}))
+      const {dispatch, file, id} = this.props;
+      if(comment.trim()) dispatch(postBlank(JSON.parse(localStorage.user).id, {image: file, body: comment}, id))
+      else dispatch(postBlank(JSON.parse(localStorage.user).id, {image: file}, id))
   }
   
   onLike(user_id, blank_id, like_id, index ){
@@ -94,16 +81,10 @@ class User extends React.Component {
             following_count={profile.following_count}
             userId={id}
           />
-          <PersonalInfo name={profile.name} biography={profile.biography}/>
+          <PersonalInfo name={profile.name} biography={profile.biography} email={profile.email}/>
           { 
             ((this.props.profile_id && this.props.profile_id) == (this.props.id && this.props.id))?
-            <PostButton 
-              isBlankFetching={isBlankFetching}
-              onMakePost={::this.onMakePost} 
-              onTransactionEnd={::this.onTransactionEnd} 
-              onSendBlank={::this.onSendBlank} 
-              attachName={hasFile && hasFile.substr(0, 8)}
-            />
+null
             :
             <Actions onSubscribe={::this.handleSubscribe} isFollowing={is_following}/>
           }
@@ -131,7 +112,20 @@ class User extends React.Component {
     );
   }
 }
-//
+
+function mapStateToProps(state, own){
+  return {
+    id: own.params.id,
+    profile_id: state.user.user.id,
+    profile: state.profile.profile,
+    blanks: state.profile.profile.blanks,
+    hasFile: state.file.fileName,
+    file: state.file.fileBase64,
+    is_following: state.profile.profile.is_following,
+    isFetching: state.profile.isFetching,
+    isBlankFetching: state.profile.isBlankFetching
+  }
+}
 
 export default User
 

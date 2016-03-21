@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   include ActiveModel::Serialization
-  attr_accessor :blanks_count
+  before_create :set_auth_token!
 
   has_secure_password
   has_many :comments, dependent: :destroy
@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
   has_many :following, through: :active_relationships,  source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
 
-  before_create :set_auth_token!
 
   has_attached_file :avatar,
     url: "/images/avatars/:hash.:extension",

@@ -1,4 +1,5 @@
 import {FETCH_USER_PAGE_REQUEST, FETCH_USER_PAGE_SUCCESS, FETCH_USER_PAGE_FAILURE} from '../actions/UserPage'
+import {browserHistory} from 'react-router'
 var deepAssign = require('deep-assign');
 
 function profile(state = {
@@ -38,7 +39,34 @@ function profile(state = {
         errorMessage: ''
       })
     case 'FETCH_ADD_BLANK_SUCCESS':
-      return Object.assign({}, state, {
+      if(action.routeId == JSON.parse(localStorage.user).id)
+        return Object.assign({}, state, {
+          profile: {
+            avatar_url: state.profile.avatar_url,
+            blanks_count:  state.profile.blanks_count + 1,
+            following_count:  state.profile.following_count,
+            followers_count:  state.profile.followers_count,
+            is_following: state.profile.is_following,
+            id:  state.profile.id,
+            email:  state.profile.email,
+            name:  state.profile.name,
+            biography:  state.profile.biography,
+            sex: state.profile.sex,
+            blanks: [{
+                id: action.blank.id,
+                is_liked_by_current_user: action.blank.is_liked_by_current_user,
+                likes_count: action.blank.likes_count,
+                image_url: action.blank.image_url,
+                comments: action.blank.comments || []
+              },
+              ...state.profile.blanks
+            ]
+          },
+          isBlankFetching: false,
+          isFetching: false,
+          errorMessage: ''
+        })
+      else return Object.assign({}, state, {
         profile: {
           avatar_url: state.profile.avatar_url,
           blanks_count:  state.profile.blanks_count + 1,
@@ -50,21 +78,12 @@ function profile(state = {
           name:  state.profile.name,
           biography:  state.profile.biography,
           sex: state.profile.sex,
-          blanks: [{
-              id: action.blank.id,
-              is_liked_by_current_user: action.blank.is_liked_by_current_user,
-              likes_count: action.blank.likes_count,
-              image_url: action.blank.image_url,
-              comments: action.blank.comments || []
-            },
-            ...state.profile.blanks
-          ]
+          blanks: state.profile.blanks
         },
         isBlankFetching: false,
         isFetching: false,
         errorMessage: ''
       })
-
     case 'ADD_COMMENT_SUCCESS':
       return Object.assign({}, state, {
         profile: {

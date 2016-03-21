@@ -7,11 +7,7 @@ import { attachFile } from '../redux/actions/attachFile'
 import Icon from '../components/Icon'
 
 
-@connect(state => ({ 
-    isFetching: state.user.isFetching, 
-    message: state.user.errorMessage, 
-    file: state.file 
-}))
+@connect(mapStateToProps)
 class Join extends React.Component {
     handleFile(ev) {
         const { dispatch } = this.props,
@@ -45,7 +41,8 @@ class Join extends React.Component {
     }
 
     render() {
-        const { file, user, dispatch } = this.props
+
+        const { file, user, dispatch, message } = this.props
 
         const fileName = file.fileName ? file.fileName : 'Attach your Avatar';
 
@@ -54,13 +51,13 @@ class Join extends React.Component {
 
                 <h4 className="title" >🎯 Join us</h4>
                 {
-                    (this.props.message)?
+                    (message)?
 
                     <div className="notification is-danger">
                       <button className="delete" onClick={
                         ()=>dispatch({type: 'CLEAR_FAILURE_MESSAGE'})
                       }></button>
-                      {this.props.message}
+                      {message}
                     </div> : ''
                 }
                 <Control className="hello">
@@ -104,24 +101,26 @@ class Join extends React.Component {
                 </Control>
 
                 <Control>
-                    <input className="input" ref="confirm" type="password" placeholder="Confirm your password"/>
-                </Control>
-
-                <Control>
                     <button onClick={::this.onJoin} 
                             ref="submit" 
                             className={`button is-primary ${(this.props.isFetching)?"is-loading":""}`}>
                              <Icon fa="check"/>&nbsp;Submit 
                     </button>
                     &nbsp;
-                    <Link to="/login" className="button" onClick={()=>this.props.dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}>
-                    <Icon fa="unlock-alt"/>&nbsp;Cancel</Link>
+                    <Link to="/login" className="button" onClick={()=>dispatch({type: 'CLEAR_FAILURE_MESSAGE'})}>
+                    <Icon fa="unlock-alt"/>&nbsp;Back to Login</Link>
                 </Control>
 
             </div>
         );
+    }
+}
 
-
+function mapStateToProps(state){
+    return { 
+        isFetching: state.user.isFetching, 
+        message: state.user.errorMessage, 
+        file: state.file 
     }
 }
 

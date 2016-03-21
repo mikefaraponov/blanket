@@ -6,10 +6,7 @@ import { attachFile } from '../redux/actions/attachFile'
 import {ColumnsMobile, Column} from '../components/ColumnsMobile'
 import { editUser, deleteUser } from '../redux/actions/Edit'
 
-@connect(state => ({
-    message: state.user.errorMessage, 
-    file: state.file 
-}))
+@connect(mapStateToProps)
 class EditProfile extends React.Component {
     constructor(...args){
         super(...args)
@@ -116,9 +113,15 @@ render() {
             </ColumnsMobile>
         </Page>
     );
-
-
+    }
 }
+
+
+function mapStateToProps(state){
+    return {
+        message: state.user.errorMessage, 
+        file: state.file 
+    }
 }
 
 export default EditProfile;

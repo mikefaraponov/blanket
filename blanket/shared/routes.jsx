@@ -23,7 +23,10 @@ function getAccess(nextState, replace){
   }
 }
 function AddBlank(){
-  return <h1>Hello!</h1>
+  return <h1>AddBlank</h1>
+}
+function About(){
+  return <h1>About</h1>
 }
 export default (
   <Route path='/' component={Root}>
@@ -50,6 +53,7 @@ export default (
         <Route path='/id:id/following' component={Following} onLeave={()=>store.dispatch({type: 'CLEAR_SEARCH_RESULTS'})}/>
         <Route path='/edit' component={EditProfile}/>
         <Route path='/add' component={AddBlank}/>
+        <Route path='/about' component={About}/>
         <IndexRedirect to={`/id${(localStorage.user)?JSON.parse(localStorage.user).id:''}`} />
       </Route>
       <Route path="*" component={NotFound}/>

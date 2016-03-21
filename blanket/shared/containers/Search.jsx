@@ -6,7 +6,7 @@ import {searchUsers} from '../redux/actions/Search'
 import {ColumnsMobile, Column} from '../components/ColumnsMobile'
 import SearchResult from '../components/SearchResult'
 
-@connect(state => ({ isFetching: state.search.isFetching, results: state.search.results }))
+@connect(mapStateToProps)
 class Search extends React.Component {
   render(){
     const {results, isFetching, dispatch} = this.props
@@ -33,6 +33,13 @@ class Search extends React.Component {
       </Page>
     );
     
+  }
+}
+
+function mapStateToProps(state){
+  return { 
+    isFetching: state.search.isFetching,
+    results: state.search.results 
   }
 }
 

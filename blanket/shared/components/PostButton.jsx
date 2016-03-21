@@ -33,7 +33,7 @@ const PostButton = React.createClass({
       
         
           (togglePostForm && !isBlankFetching)?
-          <label id='add' >
+          <label id='add'>
             <Icon fa='plus'/>
             <input 
               onChange={this.handleFile} 

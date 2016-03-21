@@ -4,8 +4,6 @@ export const FETCH_LOGIN_REQUEST = 'FETCH_LOGIN_REQUEST'
 export const FETCH_LOGIN_SUCCESS = 'FETCH_LOGIN_SUCCESS'
 export const FETCH_LOGIN_FAILURE = 'FETCH_LOGIN_FAILURE'
 
-const {stringify} =  JSON
-
 function requestLogin() {
   return {
     type: FETCH_LOGIN_REQUEST,
@@ -43,22 +41,20 @@ export function loginUser(creds) {
       headers: { 
         'Content-Type':'application/json' 
       },
-      body: stringify(
+      body: JSON.stringify(
         {
           user: creds
         }
       )
     })
-    .then( user =>  {
-        authenticate(dispatch, user)
-    })
-    .catch(err => dispatch(loginError(err.message)))
+    .then( user => authenticate(dispatch, user) )
+    .catch( err => dispatch(loginError(err.message)) )
   }
 }
 
 export function authenticate(dispatch, user){
-  localStorage.token = user.token
   localStorage.user = JSON.stringify(user)
+  localStorage.token = user.token
   dispatch(receiveLogin(user))
   dispatch(routeActions.push(`/id${user.id}`))
 }

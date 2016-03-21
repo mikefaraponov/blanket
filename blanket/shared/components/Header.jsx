@@ -15,11 +15,16 @@ class Header extends React.Component {
     }
 
     hideMenu(){
+      
       this.setState({active: false})
     }
 
+    toggleBlank(){
+      this.props.onCreateBlank()
+      this.hideMenu()
+    }
+
     render(){
-        
         let id = localStorage.user && JSON.parse(localStorage.user).id;
 
         let active = this.state.active?'is-active':'';
@@ -42,13 +47,13 @@ class Header extends React.Component {
 
                 <div className={"header-right header-menu " + active} >
                   <span className="header-item">
-                    <Link activeClassName="be-active" to='/add' onClick={::this.hideMenu}><Icon fa="camera-retro"/>&nbsp;Make a Blank</Link>
+                    <a onClick={this.toggleBlank.bind(this)}><Icon fa="camera-retro"/>&nbsp;Make a Blank</a>
                   </span>
                   <span className="header-item">
                     <Link activeClassName="be-active" to='/edit' onClick={::this.hideMenu}><Icon fa="pencil-square-o"/>&nbsp;Edit Profile</Link>
                   </span>
                   <span className="header-item">
-                    <a><Icon fa="info-circle"/>&nbsp; About</a>
+                    <Link to='/about' onClick={::this.hideMenu}><Icon fa="info-circle"/>&nbsp; About</Link>
                   </span>
                   <span className="header-item ">
                     <a className="is-disabled"><Icon fa="inbox"/>&nbsp; Inbox</a>

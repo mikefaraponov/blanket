@@ -2,8 +2,6 @@ import {ColumnsMobile, Column} from './ColumnsMobile'
 import {Link} from 'react-router'
 const UserStatArea = function({avatar, blanks_count, following_count, followers_count, userId}){
 
-
-
   return <ColumnsMobile>
           <Column className="is-quarter-mobile v-magic is-offset-2-desktop is-2-desktop">
             <figure className="image is-64x64">

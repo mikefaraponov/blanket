@@ -1,16 +1,9 @@
 import ajax from '../utils/ajax'
-// export const FETCH_FOLLOWING_REQUEST = 'FETCH_SEARCH_REQUEST'
 export const FETCH_FOLLOWING_SUCCESS = 'FETCH_FOLLOWING_SUCCESS'
 export const FETCH_FOLLOWING_FAILURE = 'FETCH_FOLLOWING_FAILURE'
 
 const {stringify} =  JSON
 
-// function requestSearch() {
-//   return {
-//     type: FETCH_SEARCH_REQUEST,
-//     isFetching: true
-//   }
-// }
 
 function receiveFollowing(following) {
   return {

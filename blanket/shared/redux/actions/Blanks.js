@@ -13,9 +13,7 @@ function receiveComment(index, comment) {
 
 
 export function addComment(post_id, index, body) {
-
   return dispatch => {
-    
       return ajax(`/users/1337/blanks/${post_id}/comments`, {
         method: 'POST',
         headers: {
@@ -30,8 +28,6 @@ export function addComment(post_id, index, body) {
       .catch(err => {
         console.warn("Error: ", err.message)
       })
-
-      
   }
 }
 
@@ -43,26 +39,25 @@ function requestBlank() {
   }
 }
 
-function receiveBlank(blank) {
+function receiveBlank(blank, routeId) {
   return {
     type: 'FETCH_ADD_BLANK_SUCCESS',
     isFetching: false,
     isBlankFetching: false,
+    routeId,
     blank
   }
 }
 
-function blankError(message) {
-  return {
+const blankError = (message) => ({
     type: 'FETCH_ADD_BLANK_FAILURE',
     isFetching: false,
     isBlankFetching: false,
     message
-  }
-}
+})
 
 
-export function postBlank(user_id, blank) {
+export function postBlank(user_id, blank, routeId) {
 
   return dispatch => {
     
@@ -81,7 +76,7 @@ export function postBlank(user_id, blank) {
         )
       })
       .then( blank =>  {
-          dispatch(receiveBlank(blank))
+          dispatch(receiveBlank(blank, routeId))
       })
       .catch(err => {
         console.warn("Error: ", err.message)

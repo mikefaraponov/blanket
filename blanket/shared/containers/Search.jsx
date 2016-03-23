@@ -5,29 +5,50 @@ import Page from '../components/Page'
 import {searchUsers} from '../redux/actions/Search'
 import {ColumnsMobile, Column} from '../components/ColumnsMobile'
 import SearchResult from '../components/SearchResult'
+import debounce from 'lodash/debounce'
 
 @connect(mapStateToProps)
 class Search extends React.Component {
+  constructor(){
+    super(...arguments)
+    this.debouncedSearch = debounce(::this.goSearch, 350)
+  }
+  goSearch(ev){
+    const {search} = this.refs;
+    const {dispatch} = this.props;
+    const v = search.value.trim()
+    if(v.length) dispatch(searchUsers(v))
+    else dispatch({type: 'CLEAR_SEARCH_RESULTS'})
+  }
+  renderSearchResult(r){
+    return (
+      <SearchResult 
+        key={r.id} 
+        avatar={r.avatar_url} 
+        userId={r.id} 
+        name={r.name} 
+        email={r.email} 
+        body={r.biography}
+      /> 
+    )
+  }
   render(){
-    const {results, isFetching, dispatch} = this.props
+    const { results, isFetching } = this.props
     return (
       <Page>
         <ColumnsMobile>
           <Column className="is-6-desktop is-offset-3-desktop">
             <Control className="has-icon" style={{marginBottom: '20px'}}>
-              <input className="input" ref="search" type="search" 
+              <input 
+                className="input" 
+                ref="search" 
+                type="search" 
                 placeholder="Start typing name..." 
-                onChange={ ev => {
-                    const v = ev.target.value.trim();
-                    if(v.length)
-                      dispatch(searchUsers(v))
-                    else
-                      dispatch({type: 'CLEAR_SEARCH_RESULTS'})
-                  }
-                }/>
+                onChange={this.debouncedSearch}
+              />
               <i className="fa fa-search"></i>
             </Control>
-            {results.map(r => <SearchResult key={r.id} avatar={r.avatar_url} userId={r.id} name={r.name} email={r.email} body={r.biography}/> )}
+            { results.map(this.renderSearchResult) }
           </Column>
         </ColumnsMobile>
       </Page>

@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
     @blank = Blank.find(params[:blank_id])
     @comment = @blank.comments.new(user_id: @current_user.id, body: comment_params[:body])
     if @comment.save
-      render json: @comment.serializable_hash(:include => {user: {only: [:name, :email], methods: :avatar_url}}), status: :created
+      render json: @comment.serialize_for_create, status: :created
     else
       render json: {message: 'Too weak!'}, status: :unprocessable_entity
     end
@@ -31,7 +31,6 @@ class CommentsController < ApplicationController
   # PATCH/PUT /comments/1.json
   def update
     @comment = Comment.find(params[:id])
-
     if @comment.update(comment_params)
       head :no_content
     else

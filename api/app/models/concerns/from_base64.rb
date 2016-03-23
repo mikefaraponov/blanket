@@ -10,4 +10,5 @@ module FromBase64
       extension: mime_type[(mime_type =~ /(?<=\/).*$/) .. -1]
     }
   end
+
 end

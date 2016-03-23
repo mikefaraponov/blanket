@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :relationships, only: [:create, :destroy]
 
-  resources :users, except: [:new, :edit] do
+  resources :users, except: [:new, :edit, :index] do
     resources :blanks, except: [:new, :edit] do
       resources :comments, except: [:new, :edit]
       resources :likes, except: [:new, :edit, :update, :show, :index]

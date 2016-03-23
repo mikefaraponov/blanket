@@ -4,7 +4,11 @@ class LikesController < ApplicationController
   def create
     if @current_user.like! @blank
       @like = @current_user.likes.find_by(blank_id: @blank.id)
-      render json: { likes_count: @blank.likes.count, your_like_id: @like.id, is_liked_by_current_user: true  }, status: :created
+      render json: {
+        likes_count: @blank.likes.count,
+        your_like_id: @like.id,
+        is_liked_by_current_user: true
+      }, status: :created
     else
       render_bad_request 'ALREADY_LIKED'
     end
@@ -12,7 +16,11 @@ class LikesController < ApplicationController
 
   def destroy
     if @current_user.dislike! @blank
-      render json: {likes_count: @blank.likes.count, your_like_id: nil, is_liked_by_current_user: false}
+      render json: {
+        likes_count: @blank.likes.count,
+        your_like_id: nil,
+        is_liked_by_current_user: false
+      }
     else
       render_bad_request 'IS_NOT_LIKED'
     end

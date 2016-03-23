@@ -19,18 +19,10 @@ class BlanksController < ApplicationController
     @blank.from_base64_to_image! blank_params[:image]
     if @blank.save
       if body = params[:blank][:body]
-        comment = Comment.new(body: body, blank_id: @blank.id, user_id: @blank.user_id)
-        comment.save
-        render json: @blank.serializable_hash(
-          only: [:id],
-          :include => {comments: {
-                         :include => {user: {only: [:name, :email], methods: :avatar_url}}
-          }},
-        methods: [:likes_count, :is_liked_by_current_user, :image_url])
-
+        Comment.create(body: body, blank_id: @blank.id, user_id: @blank.user_id)
+        render json: @blank.serialize_for_blank
       else
-        render json: @blank.serializable_hash(only: [:id],
-                                              methods: [:likes_count, :is_liked_by_current_user, :image_url]), status: :created
+        render json: @blank.serialize_without_comments, status: :created
       end
     else
       render_bad_request 'Creating Blank Failure!'

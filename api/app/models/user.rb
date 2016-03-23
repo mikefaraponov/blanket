@@ -93,11 +93,45 @@ class User < ActiveRecord::Base
     avatar.url(:original, timestamp: false)
   end
 
-  private
+  def serialize_for_relationships
+    self.serializable_hash(only: [:id, :email, :name, :biography], methods: [:avatar_url])
+  end
+  def serialize_for_user
+    self.serializable_hash(
+      except: [:avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at, :password_digest],
+      methods: :avatar_url
+    )
+  end
+  def serizlize_for_search
+    self.serializable_hash(
+      only: [:id, :name, :email, :biography],
+      methods: :avatar_url
+    )
+  end
+  def serialize_for_show
+    self.serializable_hash(
+      only: [:id, :email, :name, :sex, :biography],
+      methods: [:avatar_url, :blanks_count, :following_count, :followers_count, :is_following],
+      :include => {
+        blanks: {
+          only: [:id],
+          :include => {
+            comments: {
+              :include => {user: {only: [:name, :email], methods: :avatar_url}}
+            }
+          },
+          methods: [:likes_count, :is_liked_by_current_user, :image_url, :your_like_id]
+        }
+      }
+    )
+  end
 
   def set_auth_token!
     self.token = generate_token
+    self
   end
+
+  private
 
   def generate_token
     SecureRandom.uuid.gsub(/\-/,'')

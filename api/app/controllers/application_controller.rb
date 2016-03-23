@@ -11,7 +11,6 @@ class ApplicationController < ActionController::API
   after_action :cors_set_access_control_headers
   around_filter :set_current_user
 
-
   private
 
   def set_current_user
@@ -35,8 +34,5 @@ class ApplicationController < ActionController::API
     end
 
   end
-
-
-
 
 end

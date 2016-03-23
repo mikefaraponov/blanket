@@ -21,7 +21,6 @@ class RelationshipsController < ApplicationController
     end
   end
 
-
   private
 
   def set_other_user

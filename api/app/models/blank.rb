@@ -10,12 +10,22 @@ class Blank < ActiveRecord::Base
     styles: { original: "300x225" },
     default_url: "/300x225.png"
 
-
   validates :user_id, presence: true
 
   validates_attachment :image,
     content_type: { content_type: %w(image/jpeg image/jpg image/gif image/png) }
-
+  def serialize_without_comments
+    self.serializable_hash(only: [:id],
+                           methods: [:likes_count, :is_liked_by_current_user, :image_url])
+  end
+  def serialize_for_blank
+    self.serializable_hash(
+      only: [:id],
+      :include => {comments: {
+                     :include => {user: {only: [:name, :email], methods: :avatar_url}}
+      }},
+    methods: [:likes_count, :is_liked_by_current_user, :image_url])
+  end
   def from_base64_to_image!(image)
     decoded_img = FromBase64.decode(image)
     StringIO.open(decoded_img[:data]) do |img|
@@ -27,7 +37,6 @@ class Blank < ActiveRecord::Base
       self.image = img
     end
   end
-
 
   def image_url
     image.url(:original, timestamp: false)

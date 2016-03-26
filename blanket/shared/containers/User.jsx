@@ -84,7 +84,7 @@ class User extends React.Component {
           <PersonalInfo name={profile.name} biography={profile.biography} email={profile.email}/>
           { 
             ((this.props.profile_id && this.props.profile_id) == (this.props.id && this.props.id))?
-null
+            null
             :
             <Actions onSubscribe={::this.handleSubscribe} isFollowing={is_following}/>
           }

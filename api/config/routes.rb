@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   match '*all', to: 'application#cors_preflight_check', via: [:options]
-
-
-
   resources :relationships, only: [:create, :destroy]
 
   resources :users, except: [:new, :edit, :index] do
